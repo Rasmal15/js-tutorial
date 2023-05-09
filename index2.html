@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hh" class="c1">DOM methods</h1>
+    <button onclick="change()">change</button>
+    <p>para1</p>
+    <p class="c1">para2</p>
+    <ul>
+        <li>document.getElementById()</li>
+        <li>document.getElementsByTagName()</li>
+        <li>document.getElementsByClassName()</li>
+        <li>document.querySelector()</li>
+        <li>document.querySelectorAll()</li>
+    </ul>
+
+    <script>
+        // document.getElementById("hh").innerHTML="<i>hello</i>"
+        // document.getElementById("hh").textContent="<i>hello</i>"
+        // document.getElementById("hh").style.backgroundColor="red"
+        // res=document.getElementsByTagName("p")
+        // for(i of res){
+        //     i.style.backgroundColor="red"
+        // }
+        // Array.from(res).forEach(item=>{item.style.backgroundColor="red"})
+        // res=document.getElementsByClassName("c1")
+        // Array.from(res).forEach(item=>{item.innerHTML="<b>SAME CLASS<b/>"})
+        // function change(){
+        //     document.getElementById("hh").innerHTML="CHANGE"
+        //     document.getElementById("hh").style.backgroundColor="grey"
+        // }
+        document.querySelector("#hh").style.backgroundColor="yellow"
+        document.querySelector("p").style.border="2px solid black"
+        document.querySelector(".c1").style.color="red"
+        res=document.querySelectorAll(".c1")
+        tagg=document.querySelectorAll("p")
+        Array.from(res).forEach(item=>{
+            item.style.border="5px solid blue"
+        })
+        Array.from(tagg).forEach(item=>{
+            item.style.backgroundColor="grey"
+            item.style.color="white"
+        })
+
+    </script>
+</body>
+</html>
